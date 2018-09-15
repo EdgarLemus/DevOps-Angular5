@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HolaMundo';
+  descripcion = 'Es el Hola Mundo en Angular 5 para el semillero de DevOps';
 }

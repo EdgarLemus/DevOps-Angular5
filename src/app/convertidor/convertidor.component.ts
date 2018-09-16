@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'convertidor',
@@ -13,7 +14,7 @@ import { Component } from '@angular/core';
   export class ConvertidorComponent
   {
     numero: number;
-    resultado: string;
+    resultado = '';
 
     constructor()
     {

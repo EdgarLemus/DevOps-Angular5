@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'HolaMundo';
-  descripcion = 'Es el Hola Mundo en Angular 5 para el semillero de DevOps';
+  public title = 'HolaMundo';
+  public descripcion = 'Semillero de DevOps';
+  public integrantes = [
+    'Manuela Jaramillo',
+    'Janinson Hurtado',
+    'Edgar Lemus'
+  ];
 }

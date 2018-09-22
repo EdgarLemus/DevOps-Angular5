@@ -33,7 +33,7 @@ export class ConvertidorComponent {
 
   Convertidor(numero: number) {
     this.letra = String(numero);
-
+    
     switch (this.letra.length) {
       case 1:
         this.error = '';
@@ -43,30 +43,32 @@ export class ConvertidorComponent {
       case 2:
         this.error = '';
         this.unidad = this.Unidades(Number(this.letra.charAt(1)));
+        this.temporal = '';
         this.decena = this.Decenas(Number(this.letra.charAt(0)));
         this.temporal = '';
         break;
       case 3:
         this.error = '';
         this.unidad = this.Unidades(Number(this.letra.charAt(2)));
+        this.temporal = '';
         this.decena = this.Decenas(Number(this.letra.charAt(1)));
+        this.temporal = '';
         this.centena = this.Centanas(Number(this.letra.charAt(0)));
         this.temporal = '';
         break;
       case 4:
         this.error = '';
         this.unidad = this.Unidades(Number(this.letra.charAt(3)));
+        this.temporal = '';
         this.decena = this.Decenas(Number(this.letra.charAt(2)));
+        this.temporal = '';
         this.centena = this.Centanas(Number(this.letra.charAt(1)));
+        this.temporal = '';
         this.mil = this.Miles(Number(this.letra.charAt(0)));
         this.temporal = '';
         break;
       default:
-        if (this.numero == null) {
-          this.error = 'Por favor ingrese un numero';
-        } else {
-          this.error = 'Por favor ingrese un numero entero mayor a 0 y menor a 10,000';
-        }
+        this.error = 'Por favor ingrese un numero entero mayor a 0 y menor a 10,000';
         break;
     }
 
